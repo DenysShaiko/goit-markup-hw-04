@@ -5,6 +5,7 @@
     --blue: #2196F3;
     --grey: #2F303A;
     --grey2:#757575;
+    --greylinks: #AFB1B8;
     --white:#FFFFFF;
     --black:#212121;
     --background-team:#F5F4FA;
@@ -121,7 +122,7 @@ body{
 }
 
 .contact-link{
-    display: block;
+    align-items: center;
     display: flex;
     font-style: normal;
     font-weight: 500;
@@ -131,19 +132,21 @@ body{
     color: var(--grey2);
 }
 
+.contact-link:hover .email, .contact-link:hover .tel{
+    fill: var(--blue);
+}
+
 .contact-link:hover, .contact-link:focus{
     color: var(--blue);
 }
 
 .tel{
+
     margin-right: 10px;
-    display: flex;
     width: 10px;
     height: 16px;
-    margin: 0;
+    
     fill: var(--grey2);
-    align-items: center;
-    justify-content: center;
 }
 
 .tel:hover, .tel:focus{
@@ -153,13 +156,10 @@ body{
 
 .email{
 
-    display: flex;
+    margin-right: 10px;
     width: 16px;
     height: 12px;
-    margin: 0;
     fill: var(--grey2);
-    align-items: center;
-    justify-content: center;
 }
 
 .email:hover, .email:focus{
@@ -429,10 +429,18 @@ body{
     height: 44px;
 }
 
-.fsdas{
+.soc-team-href{
+    padding: 12px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    border-radius: 50%;
+}
+
+.soc-team-href:hover .svg-team-li{
+    fill: var(--white);
+}
+
+.soc-team-href:hover{
+    background-color: var(--blue);
 }
 
 .soc-team{
@@ -444,32 +452,77 @@ body{
     
 }
 
-.soc-team-li:hover{
-    width: 44px;
-    height: 44px;
-    background-color: var(--blue);
-    border-radius: 50%;
-}
-
 .soc-team-li:not(:last-child){
-    margin-right: 39px;
+    margin-right: 10px;
 }
 .svg-team-li{
-    fill: var(--grey2);
+    fill: var(--greylinks);
     width: 20px;
     height: 20px;
 }
 
-.svg-team-li:hover{
-    fill: var(--white);
+/* clients */
+
+.constant{
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--black);
+
+    margin-top: 94px;
 }
+
+.clients{
+    margin-top: 50px;
+    margin-bottom: 94px;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    
+}
+
+.svg-clients{
+    margin: 16px 32px;
+
+   
+   width: 106px;
+   height: 60px;
+   
+   fill: var(--greylinks);
+}
+
+.client-href:hover .svg-clients{
+    fill: var(--blue);
+}
+
+.clients-list{
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--greylinks);
+    border-radius: 4px;
+}
+
+.clients-list:hover{
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+}
+
+.clients-list:not(:last-child){
+    margin-right: 30px;
+}
+
+
+
 
 /* footer */
 
 .footer{
     padding: 60px 0;
     background-color: var(--grey);
-    display: flex;
 }
 
 .nav-logo-footer {
@@ -533,14 +586,52 @@ body{
 }
 
 .soc{
+    padding: 0;
     list-style: none;
     display: flex;
     
 }
 
+.footer-social-text{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 
+    color: var(--white);
 
+}
 
+.footer-div{
+    display: flex;
+}
+
+.footer-social-div{
+    margin-left: 70px;
+}
+
+.soc-team-href-footer{
+    padding: 12px;
+    display: flex;
+    border-radius: 50%;
+    background-color: #ffffff10 ;
+}
+
+.soc-team-href-footer:hover .svg-team-li{
+    fill: var(--white);
+}
+
+.soc-team-href-footer:hover{
+    background-color: var(--blue);
+}
+
+.svg-team-li-footer{
+    fill: var(--white);
+    width: 20px;
+    height: 20px;
+}
 /* -----------------portfolio----------- */
 
 

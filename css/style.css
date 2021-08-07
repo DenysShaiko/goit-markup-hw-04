@@ -178,9 +178,9 @@ body{
 /* hero */
 .hero-section{
     max-width: 1600px;
-    height: 600px;
+    
     background-repeat: no-repeat;
-    background-size: contain;
+    
     background-position: center;
     background-image: linear-gradient(
     to right,
@@ -256,6 +256,12 @@ body{
 /* info */
 
 .svg-div{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
     background-color: #F5F4FA;
     background-size: contain;
     height: 120px;
@@ -263,10 +269,9 @@ body{
 }
 
 .info-text-icon{
-    margin: 25px 102px;
+    
     width: 70px;
     height: 70px;
-   
 }
 
 
@@ -472,13 +477,13 @@ body{
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black);
-
-    margin-top: 94px;
+    margin: 0;
+    padding-top: 94px;
 }
 
 .clients{
     margin-top: 50px;
-    margin-bottom: 94px;
+    padding-bottom:  94px;
     padding: 0;
     display: flex;
     list-style: none;
@@ -486,13 +491,19 @@ body{
 }
 
 .svg-clients{
-    margin: 16px 32px;
-
-   
    width: 106px;
    height: 60px;
-   
    fill: var(--greylinks);
+}
+
+.client-href{
+    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    width: 170px;
+    height: 92px;
 }
 
 .client-href:hover .svg-clients{
@@ -589,6 +600,8 @@ body{
     padding: 0;
     list-style: none;
     display: flex;
+    margin-top: 20px;
+    margin-bottom: 0;
     
 }
 
@@ -602,10 +615,13 @@ body{
 
     color: var(--white);
 
+
+
 }
 
 .footer-div{
     display: flex;
+    align-items: baseline;
 }
 
 .footer-social-div{
@@ -685,6 +701,12 @@ body{
    
 }
 
+.btn-list:hover{
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+border-radius: 4px;
+
+}
+
 .btn.act{
     color: var(--white);
     background-color: var(--blue);
@@ -706,6 +728,17 @@ body{
 
 .portfolio-li{
     width: 370px;
+    
+}
+
+.portfolio-li:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.test:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 .portfolio-li:not(:last-child){

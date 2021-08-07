@@ -468,6 +468,11 @@ body{
 
 /* clients */
 
+.section-clients{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .constant{
     text-align: center;
     font-style: normal;
@@ -478,17 +483,17 @@ body{
     letter-spacing: 0.03em;
     color: var(--black);
     margin: 0;
-    padding-top: 94px;
+    
     
 }
 
 .clients{
     margin-top: 50px;
-    padding-bottom:  94px;
+    
     padding-left: 0;
     display: flex;
     list-style: none;
-    padding-bottom: 94px;
+    
     margin-bottom: 0;
 }
 

@@ -485,7 +485,7 @@ body{
 .clients{
     margin-top: 50px;
     padding-bottom:  94px;
-    padding: 0;
+    padding-left: 0;
     display: flex;
     list-style: none;
     padding-bottom: 94px;

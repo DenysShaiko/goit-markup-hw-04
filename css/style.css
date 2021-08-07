@@ -479,6 +479,7 @@ body{
     color: var(--black);
     margin: 0;
     padding-top: 94px;
+    
 }
 
 .clients{
@@ -487,7 +488,8 @@ body{
     padding: 0;
     display: flex;
     list-style: none;
-    
+    padding-bottom: 94px;
+    margin-bottom: 0;
 }
 
 .svg-clients{

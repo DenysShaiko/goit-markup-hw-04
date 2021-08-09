@@ -453,6 +453,7 @@ body{
 }
 
 .soc-team{
+    margin-top: 16px;
     justify-content: center;
     display: flex;
     list-style: none;
